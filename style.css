@@ -17,12 +17,11 @@ body{
     margin: 0 auto;
 }
 
-
-
 .rightSide{
     display: flex;
     flex-direction: column;
     background-color: #f9fafb;
+    justify-content: center;
 
 }
 
@@ -32,12 +31,46 @@ body{
 
 .signUpForm{
     background-color: white;
-    padding: 7%;
+    box-shadow: 0px 4px 3px -1px #cacaca;
+    padding: 2rem 2.5rem;
+    margin: 2rem 0;
+
+}
+
+.signUpForm input{
+    border-radius: .15em;
+    border: 1px solid rgb(199, 199, 199);
+    height: 1.33rem;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid rgb(89, 89, 248);
+    z-index: 10;
+    box-shadow: 0px 4px 3px -1px #cacaca;
 }
 
 .signUpForm p:first-child{
-    font-size: 1.2rem;
-    color: green;
+    font-size: 1.3rem;
+    padding-bottom: 0.75rem;
+
+}
+
+form label{
+    text-transform: uppercase;
+    color: rgb(90, 90, 90);
+    font-size: .6rem;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    
+}
+
+form{
+    display: flex;
+}
+
+form div{
+    flex-basis: 13rem;
 }
 
 .headlineText{
@@ -46,3 +79,25 @@ body{
     padding-right: 16.75rem;
     padding-left: 2.5rem;
 }   
+
+.bottomRight{
+    padding-top: 3rem;
+    padding-left: 2.5rem;
+}
+
+button{
+    color: white;
+    background-color: #733377;
+    border: none;
+    padding: .75rem 2.5rem;
+    border-radius: .5rem;
+    font-weight: 700;
+    box-shadow: 0px 4px 3px -1px #cacaca;
+    margin-bottom: 2rem;
+}
+
+.bottomRight a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #733377;
+}
