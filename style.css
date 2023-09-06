@@ -5,6 +5,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(assets/Norse-Bold.otf);
+}
+
 img{
     width: 25vw;
     height: 100vh;
@@ -23,11 +28,15 @@ body{
     background-color: #f9fafb;
     justify-content: center;
 
+
 }
 
 .headlineText p:last-child{
     padding-top: 1rem;
 }
+
+
+
 
 .signUpForm{
     background-color: white;
@@ -100,4 +109,42 @@ button{
     text-decoration: none;
     font-weight: bold;
     color: #733377;
+}
+
+#coverFloat{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    font-family: 'Norse Bold';
+    color: white;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 25vw;
+    margin-top: 6%;
+
+}
+
+#logo{
+    width: 128px;
+    height: 128px;
+}
+
+.leftSide > img{
+    position: absolute;
+}
+
+.leftSide > p{
+    position: relative;
+    color: white;
+    font-size: .75rem;
+    width: 25vw;
+    padding-top: 95vh;
+    padding-left: 6.25rem;
+}
+
+.leftSide a{
+    color: white;
 }
